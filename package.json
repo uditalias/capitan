@@ -1,0 +1,38 @@
+{
+  "name": "capitan",
+  "version": "1.0.0",
+  "description": "Capitan logs all requests and responses between services",
+  "main": "app.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:uditalias/capitan.git"
+  },
+  "keywords": [
+    "capitan",
+    "logs",
+    "services",
+    "request",
+    "response",
+    "chat"
+  ],
+  "author": {
+    "name": "Udi Talias",
+    "email": "udi.talias@gmail.com",
+    "url": "https://github.com/uditalias"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uditalias/capitan/issues"
+  },
+  "homepage": "https://github.com/uditalias/capitan",
+  "dependencies": {
+    "appolo-express": "^1.2.2",
+    "colors": "^1.0.3",
+    "lodash": "^2.4.1",
+    "q": "^1.0.1",
+    "socket.io": "^1.1.0"
+  }
+}

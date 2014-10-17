@@ -1,0 +1,16 @@
+{
+  "name": "capitan",
+  "version": "1.0.0",
+  "authors": [
+    "udidu <udi.talias@gmail.com>"
+  ],
+  "description": "Capitan logs all requests and responses between services",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
