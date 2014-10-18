@@ -4,7 +4,8 @@
     "description": "Capitan logs all requests and responses between services",
     "main": "app.js",
     "scripts": {
-        "test": "grunt test"
+        "test": "grunt test",
+        "postinstall": "./node_modules/bower/bin/bower install"
     },
     "repository": {
         "type": "git",
@@ -28,7 +29,9 @@
         "url": "https://github.com/uditalias/capitan/issues"
     },
     "homepage": "https://github.com/uditalias/capitan",
+
     "dependencies": {
+        "bower": "0.6.x",
         "appolo-express": "^1.2.2",
         "colors": "^1.0.3",
         "lodash": "^2.4.1",
