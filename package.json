@@ -5,7 +5,7 @@
     "main": "app.js",
     "scripts": {
         "test": "grunt test",
-        "postinstall": "bower cache clean && bower install"
+        "postinstall": "./node_modules/bower/bin/bower cache clean && ./node_modules/bower/bin/bower install"
     },
     "repository": {
         "type": "git",
