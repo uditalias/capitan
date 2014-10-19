@@ -14,6 +14,7 @@ define([
             routes: {
                 '': 'home',
                 'login': 'login',
+                'signup': 'signup',
                 '*notFound': 'notFound'
             },
 
@@ -23,6 +24,10 @@ define([
 
             login: function() {
                 clientActions.routeChanged(ROUTES.LOGIN);
+            },
+
+            signup: function() {
+                clientActions.routeChanged(ROUTES.SIGNUP);
             },
 
             notFound: function() {

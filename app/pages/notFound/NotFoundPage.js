@@ -1,6 +1,6 @@
 define(['react'], function(React) {
 
-    var NotFound = React.createClass({
+    var NotFoundPage = React.createClass({
         render: function() {
             return (
                 <div>
@@ -18,6 +18,6 @@ define(['react'], function(React) {
         }
     });
 
-    return NotFound;
+    return NotFoundPage;
 
 });

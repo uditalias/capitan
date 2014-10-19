@@ -3,10 +3,12 @@ define([
         'constants/ROUTES',
         'definitions/Router',
         'jsx!pages/home/HomePage',
-        'jsx!pages/login/LoginPage'
+        'jsx!pages/login/LoginPage',
+        'jsx!pages/signup/SignupPage',
+        'jsx!pages/notFound/NotFoundPage'
     ],
 
-    function(EventEmitter, ROUTES, Router, HomePage, LoginPage) {
+    function(EventEmitter, ROUTES, Router, HomePage, LoginPage, SignupPage, NotFoundPage) {
 
         var CHANGE_EVENT = 'change';
 
@@ -33,16 +35,20 @@ define([
                     case ROUTES.LOGIN:
                         this.setView(new LoginPage());
                         break;
-                    case ROUTES.NOT_FOUND:
-                        this._currentView = null;
+                    case ROUTES.SIGNUP:
+                        this.setView(new SignupPage());
                         break;
+
+                    //ROUTES.NOT_FOUND
+                    default:
+                        this.setView(new NotFoundPage());
                 }
             }
 
         };
 
         ViewsStore.prototype.navigate = function(routeName) {
-            this._router.navigate(routeName);
+            this._router.navigate('#/' + routeName);
         };
 
         ViewsStore.prototype.setView = function(view) {

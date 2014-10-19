@@ -4,10 +4,9 @@ define([
         'react',
         'stores/viewsStore',
         'jsx!components/header/Header',
-        'jsx!components/footer/Footer',
-        'jsx!pages/notFound/NotFound'
+        'jsx!components/footer/Footer'
     ],
-    function(React, viewsStore, Header, Footer, NotFound) {
+    function(React, viewsStore, Header, Footer) {
 
         function getAppState() {
             return {
@@ -52,13 +51,8 @@ define([
 
             _getRouteView: function() {
 
-                var view = viewsStore.getView();
+                return viewsStore.getView();
 
-                if(!view) {
-                    view = <NotFound />
-                }
-
-                return view;
             }
         });
 

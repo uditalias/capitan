@@ -38,7 +38,7 @@ define([
 
                 case CLIENT_ACTION_TYPE.NAVIGATE:
 
-                    viewsStore.navigate('#/' + action.routeName);
+                    viewsStore.navigate(action.routeName);
 
                     emitChange = true;
 
